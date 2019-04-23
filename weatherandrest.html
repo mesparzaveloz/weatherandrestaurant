@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherRestaurant</title>
+
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+        <div class="container" style="padding:20px; background-color:white;border-radius: 10%;margin:10px;">
+            <div class="forecast-table">
+                <div class="container">
+                    <div class="forecast-container">
+                        <div class="today forecast">
+                            <div class="forecast-header">
+                                <div class="day" id="t0DayOfWeek">Today</div>
+                                <div class="date" id="t0Date">99 XXX 9999</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="location" id="tCity">Location</div>
+                                <div class="degree">
+                                    <div class="num" id="t0temp">00<sup>o</sup>C</div>
+                                    <div class="forecast-icon">
+                                        <img src="" alt="" width=88 id="t0Icon">
+                                    </div>	
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day" id="t1DayOfWeek">Day1</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="fonts/weather.png" alt="icon1" width=48 id="t1Icon">
+                                </div>
+                                <div class="degree" id="t1maxtemp">21<sup>o</sup>C</div>
+                                <small id="t1mintemp">01<sup>o</sup></small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day" id="t2DayOfWeek">Day2</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="fonts/weather.png" alt="2" width=48 id="t2Icon">
+                                </div>
+                                <div class="degree" id="t2maxtemp">22<sup>o</sup>C</div>
+                                <small id="t2mintemp">02<sup>o</sup></small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day" id="t3DayOfWeek">Day3</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="fonts/weather.png" alt="3" width=48 id="t3Icon">
+                                </div>
+                                <div class="degree" id="t3maxtemp">23<sup>o</sup>C</div>
+                                <small id="t3mintemp">03<sup>o</sup></small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day" id="t4DayOfWeek">Day4</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="fonts/weather.png" alt="4" width=48 id="t4Icon">
+                                </div>
+                                <div class="degree" id="t4maxtemp">24<sup>o</sup>C</div>
+                                <small id="t4mintemp">04<sup>o</sup></small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day" id="t5DayOfWeek">Day5</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="fonts/weather.png" alt="5" width=48 id="t5Icon">
+                                </div>
+                                <div class="degree" id="t5maxtemp">25<sup>o</sup>C</div>
+                                <small id="t5mintemp">05<sup>o</sup></small>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            <div class="container" style="padding:2px;margin-right:5px;">
+                <h4>We suggest following restaurants</h4>
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4 col-xs-12">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                    <div class="day" id="rName1">Name1</div>
+                            </div>
+                        </div>
+                        <div class="forecast-icon">
+                            <img src="fonts/like.jpg" alt="1" width=150 id="rImg1">
+                        </div>
+                        <a id="rlink1" href="https://www.opentable.com" target= _blank>Link to reserve</a>
+                        <h6 id="rphone1">Phone: 999 999 9999</h6>
+                    </div>
+        
+                    <div class="col-lg-2 col-sm-4 col-xs-12">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                    <div class="day" id="rName2">Name2</div>
+                            </div>
+                        </div>
+                        <div class="forecast-icon">
+                            <img src="fonts/like.jpg" alt="2" width=150 id="rImg2">
+                        </div>
+                        <a id="rlink2" href="https://www.opentable.com" target= _blank>Link to reserve</a>
+                        <h6 id="rphone2">Phone: 999 999 9999</h6>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-4 col-xs-12">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                    <div class="day" id="rName3">Name3</div>
+                            </div>
+                        </div>
+                        <div class="forecast-icon">
+                            <img src="fonts/like.jpg" alt="3" width=150 id="rImg3">
+                        </div>
+                        <a id="rlink3" href="https://www.opentable.com" target= _blank>Link to reserve</a>
+                        <h6 id="rphone3">Phone: 999 999 9999</h6>
+                    </div>
+        
+                    <div class="col-lg-2 col-sm-4 col-xs-12">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                    <div class="day" id="rName4">Name4</div>
+                            </div>
+                        </div>
+                        <div class="forecast-icon">
+                            <img src="fonts/like.jpg" alt="4" width=150 id="rImg4">
+                        </div>
+                        <a id="rlink4" href="https://www.opentable.com" target= _blank>Link to reserve</a>
+                        <h6 id="rphone4">Phone: 999 999 9999</h6>
+                    </div>                    
+        
+                    <div class="col-lg-2 col-sm-4 col-xs-12">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                    <div class="day" id="rName5">Name5</div>
+                            </div>
+                        </div>
+                        <div class="forecast-icon">
+                            <img src="fonts/like.jpg" alt="5" width=150 id="rImg5">
+                        </div>
+                        <a id="rlink5" href="https://www.opentable.com" target= _blank>Link to reserve</a>
+                        <h6 id="rphone5">Phone: 999 999 9999</h6>
+                    </div>
+        
+                    <div class="col-lg-2 col-sm-4 col-xs-12">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                    <div class="day" id="rName6">Name6</div>
+                            </div>
+                        </div>
+                        <div class="forecast-icon">
+                            <img src="fonts/like.jpg" alt="6" width=150 id="rImg6">
+                        </div>
+                        <a id="rlink6" href="https://www.opentable.com" target= _blank>Link to reserve</a>
+                        <h6 id="rphone6">Phone: 999 999 9999</h6>
+                    </div> 
+
+                </div> 
+            </div>
+        </div>
+  <!-- Code to the JavaScript File -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+  <script src="js/weatherandrest.js"></script>
+</body>
+</html>
