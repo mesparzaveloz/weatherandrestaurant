@@ -230,6 +230,7 @@
     var hoy = moment(new Date()).format("MMM DD YYYY");
     var hoyDayOfWeek = moment(hoy).format('dddd');
     var hcity, hlatitud, hlongitud, htemp, hcountry, hhumidity, hdesc, hicon, hIconLocation = "";
+    var t1, t2 = 0;
 
     // Getting today's forecast
     $.ajax({
@@ -296,7 +297,7 @@
                 var fformat = "MM/DD/YYYY";
                 var fconverted = moment(ffecha, fformat);
                 var fDayOfWeek = moment(fconverted).format('dddd').substr(0,3) + " " + fday;
-                var t1 = Math.round(val.main.temp_min) + "°C";
+                t1 = Math.round(val.main.temp_min) + "°C";
                 var fhumidity = val.main.humidity + "%";
                 var fdesc = val.weather[0].description;
                 var ficon = val.weather[0].icon;
@@ -305,7 +306,7 @@
                 tSummary.iconos.push(fIconLocation);
             }
             if (hora === "15:00:00"){
-                var t2 = Math.round(val.main.temp_max) + "°C";
+                t2 = Math.round(val.main.temp_max) + "°C";
                 if (t1<t2){
                     tSummary.maxi.push(t2);
                     tSummary.mini.push(t1);
@@ -314,6 +315,7 @@
                     tSummary.maxi.push(t1);
                     tSummary.mini.push(t2);
                 }
+                t1,t2 = 0;
             }
             });
         }
